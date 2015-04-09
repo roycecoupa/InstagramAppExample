@@ -9,7 +9,7 @@ var hashtag = require('./routes/hashtag');
 var index = require('./routes/index');
 //database setup
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://ds061721.mongolab.com:61721/heroku_app35697979');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://heroku_app35697979:qhrfqnd69iqb7lvqd7vghbkvjn@ds061721.mongolab.com:61721/heroku_app35697979?replicaSet=rs-ds061721');
 
 //Configures the Template engine
 app.engine('handlebars', handlebars());
